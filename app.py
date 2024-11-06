@@ -1,3 +1,5 @@
+pip install matplotlib streamlit numpy pandas
+
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -134,7 +136,7 @@ def main():
             
             # Small delay to control the speed of the animation
             time.sleep(1/(len(data)-1))
-            
+
 
         # Display the outcome only after the animation completes
         total_bet_left = WR * start_bal - data['total_bet'].iloc[-1]
